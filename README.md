@@ -175,3 +175,12 @@ tabidir; ayrıntılar [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) dosyasın
 <br>
 <sub>Developed by <a href="https://github.com/heFRKN">FRKN</a></sub>
 </div>
+
+---
+
+## Destek · Support
+
+zDPI-TR ücretsiz ve açık kaynak. İşine yaradıysa destek olabilirsin.<br>
+<sub>zDPI-TR is free and open source. If it helped you, you can support its development.</sub>
+
+[![Kreosus](https://img.shields.io/badge/Kreosus-furkantiril-990033?style=flat-square)](https://kreosus.com/furkantiril)
