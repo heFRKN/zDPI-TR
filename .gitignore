@@ -1,0 +1,9 @@
+# Derleme ciktisi (dagitim zip'i Releases'e yuklenir)
+dist/
+
+# Loglar
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini

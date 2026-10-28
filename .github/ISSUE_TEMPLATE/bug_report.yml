@@ -1,0 +1,61 @@
+name: Hata bildirimi
+description: zDPI çalışmıyor veya beklenmedik bir şey oluyor
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bildirmeden önce lütfen README'deki **Sorun giderme** bölümüne ve uygulamadaki **Nasıl kullanılır** sekmesine göz atın, bilgisayarı bir kez yeniden başlatıp tekrar deneyin.
+  - type: input
+    id: version
+    attributes:
+      label: zDPI sürümü
+      description: Nasıl kullanılır sekmesinin en altında yazar.
+      placeholder: "2.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Windows sürümü
+      options:
+        - Windows 11
+        - Windows 10
+    validations:
+      required: true
+  - type: input
+    id: isp
+    attributes:
+      label: İnternet bağlantısı
+      description: Sağlayıcı ve bağlantı türü (fiber, VDSL, mobil vb.)
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Hangi mod?
+      options:
+        - Hizmet
+        - Tek seferlik
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Sorun
+      description: Ne oluyor, ne olmasını bekliyordunuz? Durum sekmesindeki uyarıyı da yazın.
+    validations:
+      required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: Durum testi çıktısı
+      description: |
+        zDPI klasöründe yönetici PowerShell açıp şunu çalıştırın ve çıktıyı yapıştırın:
+        `powershell -ExecutionPolicy Bypass -File .\core\zdpi.ps1 -Action test`
+      render: text
+  - type: textarea
+    id: other
+    attributes:
+      label: Açık olan diğer programlar
+      description: VPN, başka DPI araçları, antivirüs vb.

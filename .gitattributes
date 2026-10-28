@@ -1,0 +1,16 @@
+# Windows betikleri repoda CRLF olarak saklanir (-text: git donusturmez).
+# Boylece GitHub "Download ZIP" ile de her zaman CRLF satir sonlariyla iner.
+*.ps1       -text
+*.txt       -text
+
+*.cs        text eol=crlf
+*.xaml      text eol=crlf
+*.manifest  text eol=crlf
+*.md        text eol=lf
+*.yml       text eol=lf
+
+*.exe       binary
+*.dll       binary
+*.sys       binary
+*.ico       binary
+*.png       binary
